@@ -1,3 +1,9 @@
+:root{
+    --img-width: max(35vw, 400px);
+    --hue-color:  #B1A89A;
+    font-family: Helvetica, sans-serif;
+}
+
 * {
     margin: 0px;
 }
@@ -5,5 +11,49 @@
 @font-face {
     font-family: odin;
     src: url(./font/Norse-Bold.otf);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.img-container{
+    position: relative;
+    width: var(--img-width);
+    height: 100vw;
+}
+
+.asgard-background {
+    height: 100vh;
+    width: var(--img-width);
+    margin: 0px;
+}
+
+.background-img {
+    background-color: black;
+    opacity: 70%;
+    height: 30vh;
+    width: var(--img-width);
+    position: absolute;
+    top: 20vh;
+    left: 0;
+}
+
+.background-img h1 {
+    font-family: odin;
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+
+.odin-logo {
+    position: absolute;
+    top: 21vh;
+    left: 4vw;
+    height: 28vh;
 }
 
